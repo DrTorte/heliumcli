@@ -15,6 +15,7 @@ script:
 - make test
 after_success:
 - codecov
+- twine
 deploy:
   provider: pypi
   user: alexdlaird
