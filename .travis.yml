@@ -9,6 +9,7 @@ install:
 - python -m virtualenv .venv
 - source .venv/bin/activate
 - python -m pip install -r requirements.txt
+- sudo -H pip install twine 
 - pip install setuptools twine --upgrade
 script:
 - make test
